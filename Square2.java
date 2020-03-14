@@ -15,24 +15,24 @@ public class Square2 implements ActionListener
 
     public Square2() {
         frame = new JFrame();
-        frame.setTitle("Eric T39");
-        frame.setSize(200, 200);
+        frame.setTitle("Frogger");
+        frame.setSize(1000, 1000);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         numericPanel = new JPanel();
-        numericPanel.setLayout(new GridLayout(4, 3));
+        numericPanel.setLayout(new GridLayout(5, 5));
 
         for (int i = 1; i < 25; i++) {
             numericKeypad[i] = new JButton("" + i);
             numericPanel.add(numericKeypad[i]);
         }
 
-        numericPanel.add(new JButton("*"));
+        
 
-        numericKeypad[0] = new JButton("0");
+        numericKeypad[0] = new JButton("25");
         numericPanel.add(numericKeypad[0]);
-        numericPanel.add(new JButton("#"));
+        
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 25; i++)
             numericKeypad[i].addActionListener(this);
 
         
@@ -40,7 +40,7 @@ public class Square2 implements ActionListener
         panel = new JPanel();
         panel.setLayout(new BorderLayout());
 
-        panel.add("South", numericPanel);
+        panel.add("Center", numericPanel);
 
         frame.setContentPane(panel);
         frame.setVisible(true);
