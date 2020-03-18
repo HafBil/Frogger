@@ -8,7 +8,7 @@ public class Board3
 }
 
 
-//panel.setSize(400,400);
-//numericPanel.setSize(400,400);
-            //new JButton().setSize(400,400);
-            //
+//Compile in CMD
+//C:\Users\Bilal\Documents\University\SCC110\CW trash\Square2
+//javac Square2
+//java Board3
